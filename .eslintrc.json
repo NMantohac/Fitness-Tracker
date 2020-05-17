@@ -23,7 +23,9 @@
         "react"
     ],
     "rules": {
-        "linebreak-style":"off",
-        "object-curly-newline":"off"
+        "linebreak-style": ["off"],
+        "object-curly-newline": ["off"],
+        "arrow-body-style": ["off"],
+        "func-names": ["off"]
     }
 }
