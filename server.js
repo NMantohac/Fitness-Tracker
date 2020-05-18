@@ -3,7 +3,6 @@ const express = require('express');
 const mongoose = require('mongoose');
 
 const routes = require('./routes');
-const htmlRoutes = require('./routes/htmlRoutes');
 
 const app = express();
 
@@ -14,12 +13,14 @@ app.use(express.json());
 
 app.use(routes);
 
-// app.use(express.static('public'));
+app.use(express.static('public'));
 
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static('public'));
-  app.use('/', htmlRoutes);
-}
+// if (process.env.NODE_ENV === 'production') {
+//   app.use(express.static('public'));
+//   app.get('/', (req, res) => {
+//     res.sendFile(path.resolve(__dirname, 'public', 'public/index.html'));
+//   });
+// }
 
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/fitness_tracker_db', { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false });
 
