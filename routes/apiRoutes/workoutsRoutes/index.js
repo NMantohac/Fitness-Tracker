@@ -1,18 +1,18 @@
 const router = require('express').Router();
 const workoutController = require('../../../controllers/workoutController');
 
-// /api/workout prepended here
+// /api/workouts prepended here
 
-// /api/workout
+// /api/workouts
 router.route('/')
   .get(workoutController.getLastWorkout)
   .post(workoutController.createWorkout);
 
-// /api/workout/range
+// /api/workouts/range
 router.route('/range')
   .get(workoutController.getWorkoutsInRange);
 
-// /api/workout/:id
+// /api/workouts/:id
 router.route('/:id')
   .put(workoutController.addExercise);
 
