@@ -1,7 +1,7 @@
 const { Workout } = require('../models');
 
 module.exports = {
-  // Finds all workouts from the database
+  // Finds all workouts in the database, but returns the most recent workout in the front-end
   getLastWorkout: async (req, res) => {
     try {
       const lastWorkout = await Workout.find({});
