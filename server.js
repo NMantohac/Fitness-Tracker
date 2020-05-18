@@ -22,6 +22,6 @@ app.use(express.static('public'));
 //   });
 // }
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/fitness_tracker_db', { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false });
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://user:password123@ds151076.mlab.com:51076/heroku_r334h2s4', { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false });
 
 app.listen(PORT);
