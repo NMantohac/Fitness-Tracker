@@ -6,7 +6,7 @@
 
   2) Heroku: https://fast-cove-36874.herokuapp.com/
   
-  3) Overall Function (Heroku): https://drive.google.com/file/d/1Wcn66xZ7tUaLzMfgF_be5Ob86D70M9ow/view
+  3) Overall Function (Heroku): https://drive.google.com/file/d/1oU-9UysmBTeaa5vKnbLVaBz4K-fitmCR/view
 
 ## Description
 
@@ -25,6 +25,7 @@
   and they overall contain variables (const/let), async & await functions, try/catch blocks, arrays/objects, require/module.exports, 
   destructuring variables and schemas. In addition, npm installation was used in order to install express for the server, mongoose to 
   create the MongoDB schemas and to provide a connection to it, and ESLint as a dev dependency to encourage good code syntax/standards.
+  The application is fully deployed in Heroku with a connected MongoDB database due to mLab add-on.
 
 ## Technologies
 
@@ -35,7 +36,7 @@
     * npm - mongoose
     * npm (Dev) - ESLint 
     * GitHub
-    * Heroku
+    * Heroku with mLab MongoDB add-on
 
 ## Challenges
 
