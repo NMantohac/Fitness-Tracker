@@ -2,7 +2,7 @@
 
 ## URL Links
 
-  1) GitHub: https://github.com/NMantohac/Homework_17_Fitness_Tracker
+  1) GitHub: https://github.com/NMantohac/Fitness-Tracker
 
   2) Heroku: https://fast-cove-36874.herokuapp.com/
   
